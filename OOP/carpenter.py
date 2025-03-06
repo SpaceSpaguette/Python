@@ -11,25 +11,26 @@ class factory:
             self.sirka = sirka
             self.hloubka = hloubka
             return f"Vyska je {vyska}, sirka je {sirka}, hloubka je {hloubka},ze {self.material}"
+
     def chair(self,vyska,sirka,hloubka):
             self.vyska = vyska
             self.sirka = sirka
             self.hloubka = hloubka
             return f"Vyska je {vyska}, sirka je {sirka}, hloubka je {hloubka},ze {self.material}"
+
     def closet(self,vyska,sirka,hloubka,drawers):
             self.vyska = vyska
             self.sirka = sirka
             self.hloubka = hloubka
             self.drawers = drawers
             return f"Vyska je {vyska}, sirka je {sirka}, hloubka je {hloubka},ze {self.material}. Pocet supliku je {drawers}"
+
     def board_closet(self,vyska,sirka,hloubka):
             self.vyska = vyska
             self.sirka = sirka
             self.hloubka = hloubka
             return f"Vyska je {vyska}, sirka je {sirka}, hloubka je {hloubka},ze {self.material}"
 
-
-
-x = factory("Dubu")
+x = factory(input("Insert random text for material> "))
 print(x.table(12,13,15))
 print(x.closet(13,11,13,12))

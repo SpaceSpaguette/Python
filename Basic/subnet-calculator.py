@@ -1,10 +1,10 @@
 '''mode import == import your custom IPv4 address
 mode == gen generate unigue custom IPv4 address'''
 import string
-
-if input("Gen or import") == "Import":
-    imported_adress = input("Enter your IPv4 address: ")
-    mask = input("Enter your IPv4 mask: ")
+l = 1
+if l == 1:
+    imported_adress = "10.10.10"
+    #mask = input("Enter your IPv4 mask: ")
     #Conver adress to list
     adress = []
     buffer = ""
